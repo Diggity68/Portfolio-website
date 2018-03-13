@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Biryani:200|Lato:100|Raleway:100');
+
+header{
+    background:#3D3D3D;
+    width:100%;
+    padding: 10px;
+    height: 250px;
+}
+
+body{
+    margin: 0;
+}
+
+
+
+h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+h2{
+    
+}
+
+.name {
+    color: white;
+    padding:10px;
+    width: 300px;
+}
+
+.firstN {
+    text-indent: 50px;
+    color: white;
+}
+
+.middleN {
+    text-indent: 75px;
+    color: white;
+}
+
+.lastN{
+    text-indent: 100px;
+    color: white;
+}
+
+.about {
+    font-weight: 100;
+    text-align: right;
+}
+
+font {
+    font-size: 
+}
