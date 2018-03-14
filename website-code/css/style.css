@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Biryani:200|Lato:100|Raleway:100');
 
 /*going to have the logo, name and image in the header*/
+
 /*Will use flex to have all three objects side by side of each other*/
-header {
+
+/*The class for the homepage header*/
+
+.homH {
     background: #3D3D3D;
     width: 100%;
     padding: 10px;
@@ -11,23 +15,38 @@ header {
 }
 
 /*For the logo on the Homepage*/
+
 .logo {
     width: 230px;
 }
 
+/*Setting width and height of main tag on all pages*/
+
+main {
+    margin: auto;
+    max-width: 1280px;
+    background: white;
+    min-height: 1080px;
+}
+
+
 /*There to get rid of outer white rim arond the header*/
+
 body {
     margin: 0;
 }
 
 
 /*The font family for my full name in the header*/
+
 h1 {
     font-family: 'Raleway', sans-serif;
+    margin: 10px
 }
 
 
 /*The class for the div that the name is in. Later to use it for when I use display flex for the header and have my name and logo side by side.*/
+
 .name {
     color: white;
     padding: 10px;
@@ -50,17 +69,49 @@ h1 {
     text-indent: 100px;
     color: white;
 }
+
 /**/
 
 /*The style and size for the About Me link*/
+
+a {
+    text-decoration: none;
+    display: inline-block;
+
+}
+
 .about {
-    font-weight: 100;
+    text-align: right;
+    width: 300px;
+    height: 35px;
+
+    color: white;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to right, #9812C4, black);
+}
+
+.alignAbout {
     text-align: right;
 }
 
-
 /*The font size for the letters and characters in the <font> tag */
+
 /*A slightler bigger font than the other letters for emphasis to initials and the arrow in the about me link.*/
+
 font {
-    font-size:
+    font-weight: 800;
+    font-size: 115%;
+}
+
+/*Art Info card with picture*/
+.art-card {
+    background-image: url(/website-code/img/black_panther_unfinish-1.jpg);
+    width: 350px;
+    height: 300px;
+    border-radius: 15px;
+    color: white;
+    font-size: 170%;
+    margin: auto;
+    font-family: 'Lato', sans-serif; 
 }
