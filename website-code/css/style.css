@@ -36,6 +36,11 @@ body {
     margin: 0;
 }
 
+.intro {
+    font-size: 110%;
+    font-family: 'Biryani', sans-serif;
+    text-indent: 30px;
+}
 
 /*The font family for my full name in the header*/
 
@@ -104,9 +109,13 @@ font {
     font-size: 115%;
 }
 
+.art img {
+    width: 40%
+}
+
 /*Art Info card with picture*/
 .art-card {
-    background-image: url(/website-code/img/black_panther_unfinish-1.jpg);
+    background-image: url(/img/black_panther_unfinish-1.jpg);
     width: 350px;
     height: 300px;
     border-radius: 15px;
@@ -114,4 +123,37 @@ font {
     font-size: 170%;
     margin: auto;
     font-family: 'Lato', sans-serif; 
+}
+
+.info-card {
+    background-image:url(http://via.placeholder.com/350x300);
+    width: 350px;
+    height: 300px;
+    border-radius: 15px;
+    color: white;
+    font-size: 170%;
+    margin: auto;
+    font-family: 'Lato', sans-serif; 
+}
+
+.About-card {
+    background-image:url(/img/pic-of-me.PNG);
+    width: 350px;
+    height: 300px;
+    border-radius: 15px;
+    color: white;
+    font-size: 170%;
+    margin: auto;
+    font-family: 'Lato', sans-serif; 
+}
+.wheel {
+    display: flex;
+}
+
+.writing {
+    display: flex;
+}
+
+.description{
+    justify-content: space-between;
 }
