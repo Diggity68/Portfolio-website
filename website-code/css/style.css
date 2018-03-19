@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Biryani:200|Lato:100|Raleway:100');
 
+
+
 /*going to have the logo, name and image in the header*/
 
 /*Will use flex to have all three objects side by side of each other*/
 
 /*The class for the homepage header*/
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline-block;
+
+}
 
 .homH {
     background: #3D3D3D;
@@ -12,6 +24,58 @@
     padding: 10px;
     height: 250px;
     display: flex;
+}
+
+/*Nav Bar and Dropdown list for nav*/
+
+.nav-bar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto 0;
+    background: #3D3D3D;
+    justify-content: flex-end;
+    font-family: 'Biryani', sans-serif;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+
+
+nav {
+    display: flex;
+    padding: 0px;
+}
+
+.nav-logo{
+    width: 40px;
+    height: 40px;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    max-width: 150px;
+    z-index: 1;
+    padding: 10px 40px;
+    background-color: darkgray;
+    margin: 1px 0px auto;
+    
+}
+
+.dropdown-content a {
+    margin: 1px
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /*For the logo on the Homepage*/
@@ -79,12 +143,6 @@ h1 {
 
 /*The style and size for the About Me link*/
 
-a {
-    text-decoration: none;
-    display: inline-block;
-
-}
-
 .about {
     text-align: right;
     width: 300px;
@@ -114,6 +172,7 @@ font {
 }
 
 /*Art Info card with picture*/
+
 .art-card {
     background-image: url(/img/black_panther_unfinish-1.jpg);
     width: 350px;
@@ -122,30 +181,31 @@ font {
     color: white;
     font-size: 170%;
     margin: auto;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Lato', sans-serif;
 }
 
 .info-card {
-    background-image:url(http://via.placeholder.com/350x300);
+    background-image: url(http://via.placeholder.com/350x300);
     width: 350px;
     height: 300px;
     border-radius: 15px;
     color: white;
     font-size: 170%;
     margin: auto;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Lato', sans-serif;
 }
 
 .About-card {
-    background-image:url(/img/pic-of-me.PNG);
+    background-image: url(/img/pic-of-me.PNG);
     width: 350px;
     height: 300px;
     border-radius: 15px;
     color: white;
     font-size: 170%;
     margin: auto;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Lato', sans-serif;
 }
+
 .wheel {
     display: flex;
 }
@@ -154,6 +214,6 @@ font {
     display: flex;
 }
 
-.description{
+.description {
     justify-content: space-between;
 }
