@@ -29,8 +29,8 @@ a {
 /*Nav Bar and Dropdown list for nav*/
 
 .nav-bar {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: auto 0;
     background: #3D3D3D;
     justify-content: flex-end;
@@ -40,7 +40,11 @@ a {
     display: flex;
 }
 
-
+.nav-list {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex    
+}
 
 nav {
     display: flex;
@@ -50,7 +54,22 @@ nav {
 .nav-logo{
     width: 40px;
     height: 40px;
+/*    margin-right: auto; */
+    padding-left: 10px;
+    display: block;
+    padding-right: 10px;
     
+}
+
+.nav-name {
+  
+    margin-right: auto;
+    color: white;
+    font-family: 'Biryani', sans-serif;
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    position:relative;
 }
 
 .dropdown {
