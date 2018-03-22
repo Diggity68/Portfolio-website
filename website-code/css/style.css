@@ -15,7 +15,6 @@ a {
     padding-right: 10px;
     padding-left: 10px;
     display: inline-block;
-
 }
 
 .homH {
@@ -43,33 +42,35 @@ a {
 .nav-list {
     margin-top: auto;
     margin-bottom: auto;
-    display: flex    
+    display: flex
 }
+
+
+
 
 nav {
     display: flex;
     padding: 0px;
 }
 
-.nav-logo{
+.nav-logo {
     width: 40px;
     height: 40px;
-/*    margin-right: auto; */
     padding-left: 10px;
     display: block;
     padding-right: 10px;
-    
+
 }
 
 .nav-name {
-  
+
     margin-right: auto;
     color: white;
     font-family: 'Biryani', sans-serif;
     font-size: 25px;
     margin-top: auto;
     margin-bottom: auto;
-    position:relative;
+    position: relative;
 }
 
 .dropdown {
@@ -81,20 +82,30 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    max-width: 150px;
+    padding: 0;
     z-index: 1;
-    padding: 10px 40px;
     background-color: darkgray;
-    margin: 1px 0px auto;
-    
+    margin: 0 0 0 0;
+
 }
 
-.dropdown-content a {
-    margin: 1px
+.dropdown-content li {
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+    transition-duration: 0.5s;
+
 }
+
+li:hover {
+    background-color: black;
+    animation-duration: 5s
+}
+
 
 .dropdown:hover .dropdown-content {
     display: block;
+    background-color: purple;
 }
 
 /*For the logo on the Homepage*/
@@ -111,7 +122,6 @@ main {
     background: white;
     min-height: 1080px;
 }
-
 
 /*There to get rid of outer white rim arond the header*/
 
@@ -166,7 +176,6 @@ h1 {
     text-align: right;
     width: 300px;
     height: 35px;
-
     color: white;
     font-size: 22px;
     font-family: 'Raleway', sans-serif;
@@ -192,27 +201,23 @@ font {
 
 /*Art Info card with picture*/
 
-.art-card {
-    background-image: url(/img/black_panther_unfinish-1.jpg);
-    width: 350px;
-    height: 300px;
-    border-radius: 15px;
-    color: white;
-    font-size: 170%;
-    margin: auto;
-    font-family: 'Lato', sans-serif;
+
+
+.writing {
+    display: flex;
 }
 
-.info-card {
-    background-image: url(http://via.placeholder.com/350x300);
-    width: 350px;
-    height: 300px;
-    border-radius: 15px;
-    color: white;
-    font-size: 170%;
-    margin: auto;
-    font-family: 'Lato', sans-serif;
+.description {
+    justify-content: space-between;
 }
+
+.contact {
+    overflow-x: scroll;
+}
+
+
+
+/*Different cards for website*/
 
 .About-card {
     background-image: url(/img/pic-of-me.PNG);
@@ -225,14 +230,39 @@ font {
     font-family: 'Lato', sans-serif;
 }
 
-.wheel {
-    display: flex;
+.art-card {
+    background-image: url(/img/black_panther_unfinish-1.jpg);
+    width: 350px;
+    height: 300px;
+    border-radius: 15px;
+    color: white;
+    font-size: 170%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
 }
 
-.writing {
-    display: flex;
+.writing-card {
+    background-image: url(/img/writing-info-card.PNG);
+    width: 350px;
+    height: 300px;
+    border-radius: 15px;
+    color: white;
+    font-size: 170%;
+    margin: auto;
+    margin-top: 9px;
+    font-family: 'Lato', sans-serif;
 }
 
-.description {
-    justify-content: space-between;
+.info-card {
+    background-image: url(http://via.placeholder.com/350x300);
+    width: 350px;
+    height: 300px;
+    border-radius: 15px;
+    color: white;
+    font-size: 170%;
+    margin: auto;
+    margin-top: 9px;
+    font-family: 'Lato', sans-serif;
 }
+
+/**/
