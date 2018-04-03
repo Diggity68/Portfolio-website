@@ -202,10 +202,6 @@ font {
 /*Art Info card with picture*/
 
 
-.wheel {
-    display: flex;
-}
-
 .writing {
     display: flex;
 }
@@ -219,7 +215,24 @@ font {
 }
 
 
+/*Carousel*/
 
+.wheel {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+}
+
+.card {
+    display: none;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
 /*Different cards for website*/
 
 .About-card {
