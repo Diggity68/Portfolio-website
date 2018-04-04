@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>P. A. H.</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/script.js">
+    <script src="js/script.js"></script>
 
     <!--    My logo on the tab bar-->
     <!--    The other links are for apple decives and phones when the website is made into a shortcut-->
@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body onload="">
     <header class="homH">
         <img class="logo" src="img/pah_logo.png" alt="pah logo">
         <div class="name">
@@ -47,42 +47,46 @@
         </p>
         <!--   Topic Wheel-->
         <div class="wheel">
-            <a href="art.html">
+            <a href="art.html" class="link">
                 <div class="art-card card">Art</div>
             </a>
             <br>
-            <a href="writing.html">
+            <a href="writing.html" class="link">
                 <div class="writing-card card">Writing</div>
             </a>
             <br>
-            <a href="about-me.html">
+            <a href="about-me.html" class="link">
                 <div class="About-card card">About Me</div>
             </a>
             <br>
-            <a href="contact.html">
+            <a href="contact.html" class="link">
                 <div class="info-card card">Contact Me</div>
             </a>
             <br>
-            <a href="website-projects.html">
+            <a href="website-projects.html" class="link">
                 <div class="info-card card">Websites</div>
             </a>
             <br>
-            <a href="resume.html">
+            <a href="resume.html" class="link">
                 <div class="info-card card">Resume</div>
             </a>
 
         </div>
 
-   <div>
-       <span class="dot" onclick="currentSlide(1)"></span>
-       <span class="dot" onclick="currentSlide(2)"></span>
-       <span class="dot" onclick="currentSlide(3)"></span>
-       <span class="dot" onclick="currentSlide(4)"></span>
-       <span class="dot" onclick="currentSlide(5)"></span>
-       <span class="dot" onclick="currentSlide(6)"></span>
-       <span class="dot" onclick="currentSlide(7)"></span>
-   </div>
-   
+        <div class="indicator">
+            <a class="prev" onclick="plusSlides(-1)"> &#10094; </a>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
     </main>
+    <script>
+        showSlide(myCards);
+    </script>
 </body>
 </html>

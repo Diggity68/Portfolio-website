@@ -227,12 +227,38 @@ font {
     display: none;
 }
 
+.prev {
+    display: inline;
+    color: black;
+    cursor: pointer;
+}
+
+.next {
+    display: inline;
+    color: black;
+    cursor: pointer;
+
+}
 .dot {
-    width: 10px;
-    height: 10px;
+    background-color: lightgray;
+    color: black;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     display: inline-block;
+    transition: 0.6s ease;
+    cursor: pointer;
 }
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.indicator {
+    font-size: 20px;
+    text-align: center;
+}
+
 /*Different cards for website*/
 
 .About-card {
